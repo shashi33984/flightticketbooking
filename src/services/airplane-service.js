@@ -24,6 +24,7 @@ async function createAirplane(data) {
 
 async function getAirplanes() {
     try {
+        console.log("route is hit ");
         const airplanes = await airplaneRepository.getAll();
         return airplanes;
     } catch(error) {
