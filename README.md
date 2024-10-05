@@ -1,5 +1,4 @@
-This is a base node js project template, which anyone can use as it has been prepared, by keeping some of the most important code principles and project management recommendations. Feel free to change anything. 
-
+This is a base node js project template, which anyone can use as it has been prepared, by keeping some of the most important code principles and project management r
 
 `src` -> Inside the src folder all the actual source code regarding the project will reside, this will not include any kind of tests. (You might want to make separate tests folder)
 
@@ -32,7 +31,7 @@ Lets take a look inside the `src` folder
     ```
     ex: 
     ```
-        PORT=3000
+        PORT=3005
     ```
  - go inside the `src` folder and execute the following command:
     ```
@@ -46,3 +45,13 @@ Lets take a look inside the `src` folder
  ```
  npm run dev
  ```
+----  I have also hosted My  Applicaton on ip 13.232.108.46 and on Port 3005 using AWS EC2 
+  -- So for accessing my applicaton you can hit following api points to test my applicaton :
+ FOR AIRPLANE ROUTES
+ - For getting all airplanes that are there in my application : Get Request-> http://13.232.108.46:3005/api/v1/airplanes
+ - for Creating a new airplane you can perform a post request : POST Request ->http://13.232.108.46:3005/api/v1/airplanes with req body having modelNumber having 
+   modelNumber and capacity with the capacity of the airplanes
+ FOR AIRPORT ROUTES
+  -> For getting all airports in the app:Get Request ->http://13.232.108.46:3005/api/v1/airports
+  -> For Creating any new Airport you can hit : POST Request -> http://13.232.108.46:3005/api/v1/airports with reqbody having name code and cityId with having cityId association with city routes so there must be a city present in city before having any airport so before creating any airport there must be an city associated with it
+
