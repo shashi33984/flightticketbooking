@@ -54,4 +54,18 @@ Lets take a look inside the `src` folder
  FOR AIRPORT ROUTES
   -> For getting all airports in the app:Get Request ->http://13.232.108.46:3005/api/v1/airports
   -> For Creating any new Airport you can hit : POST Request -> http://13.232.108.46:3005/api/v1/airports with reqbody having name code and cityId with having cityId association with city routes so there must be a city present in city before having any airport so before creating any airport there must be an city associated with it
-
+  For FLIGHTS ROUTES
+ -> For getting all flights scheduled in the app : Get Request -> http://13.232.108.46:3005/api/v1/flights
+ -> For Creating a new flight in the app : POST Request with the request body containing following data :
+    1) flightNumber
+    2) AirplaneId -> this id must be same as id of the airplane
+    3) arrivalAirportId-> this id must be the sort code of the airport id
+    4) departureAirportId-> this id must be the sort code of the airport
+    5) arrivalTime-> provide this in date and time format
+    6) departureTime->provide this in date and time format
+    7) price -> price should be given
+    8) boardingGate->not compulsory but can be given
+    9) totalSeats-> define the total no of seats in our flight
+  ->For Updating Flight seats details ->PATCH Request on http://13.232.108.46:3005/api/v1/flights/:id/seats -> seats should be present in the req body 
+For City Route
+   -> For Creating a new city-> POST REQUEST ->http://13.232.108.46:3005/api/v1/cities with name in req body
