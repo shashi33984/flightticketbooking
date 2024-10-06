@@ -45,8 +45,10 @@ Lets take a look inside the `src` folder
  ```
  npm run dev
  ```
-----  I have also hosted My  Applicaton on ip 13.232.108.46 and on Port 3005 using AWS EC2 
+----  I have also hosted My  Applicaton on ip 13.232.108.46 and on Port 3005 using AWS EC2
+
   -- So for accessing my applicaton you can hit following api points to test my applicaton :
+  
  FOR AIRPLANE ROUTES
  
  - For getting all airplanes that are there in my application : Get Request-> http://13.232.108.46:3005/api/v1/airplanes
